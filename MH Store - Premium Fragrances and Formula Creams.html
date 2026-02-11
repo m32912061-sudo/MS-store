@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH Store - Premium Fragrances and Formula Creams</title>
+    <style>
+        /* Advanced CSS with modern styling, animations, and responsiveness */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background: #2980b9;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            background: #27ae60;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+        form button:hover {
+            background: #229954;
+        }
+        .contact-options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contact-options a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            margin: 10px;
+            transition: color 0.3s ease;
+        }
+        .contact-options a:hover {
+            color: #2980b9;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .contact-options {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MH Store</h1>
+        <p>Your trusted destination for premium fragrances and quality formula creams.</p>
+    </header>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h2>Welcome to MH Store</h2>
+            <p>Welcome to <strong>MH Store</strong> – your trusted destination for premium fragrances and quality formula creams. We offer authentic products, easy online ordering, and direct contact with the owner for customer satisfaction.</p>
+        </section>
+
+        <!-- Section 1: MH Online Khushboo Store -->
+        <section id="khushboo-store">
+            <h2>MH Online Khushboo Store</h2>
+            <p>Discover a wide range of high-quality <strong>khushboo (fragrances)</strong> for men and women. Our collection includes long-lasting and premium scents suitable for daily use, special occasions, and gifting.</p>
+            <ul>
+                <li>Wide variety of fragrances</li>
+                <li>Long-lasting quality</li>
+                <li>Affordable prices</li>
+                <li>Easy online order system</li>
+            </ul>
+            <a href="#order" class="cta-button">🛒 Order Fragrance Online</a>
+        </section>
+
+        <!-- Section 2: MH Mix Formula Cream -->
+        <section id="formula-cream">
+            <h2>MH Mix Formula Cream</h2>
+            <p><strong>MH Mix Formula Cream</strong> is carefully prepared with trusted ingredients for quality results. Our formula cream is designed to meet customer needs with proper care and satisfaction.</p>
+            <ul>
+                <li>Trusted mix formula</li>
+                <li>Quality ingredients</li>
+                <li>Customer-approved product</li>
+                <li>Direct order from owner</li>
+            </ul>
+            <a href="#order" class="cta-button">🛒 Order Formula Cream</a>
+        </section>
+
+        <!-- Online Order Section -->
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <p>Customers can select a product, enter their details, and submit the order online. You'll receive confirmation via phone or WhatsApp.</p>
+            <form id="order-form">
+                <label for="product">Select Product:</label>
+                <select id="product" name="product" required>
+                    <option value="">Choose Different Perfumes and Cream</option>
+                    <option value="Fragrance">Fragrance from MH Online Khushboo Store</option>
+                    <option value="Fragrance">Dior Sauvage</option>
+                    <option value="Fragrance">Bleu de Chanel</option>
+                    <option value="Fragrance">Creed Aventus</option>
+                    <option value="Fragrance">Versace Eros</option>
+                    <option value="Fragrance">Janan sports</option>
+
+                    <option value="Formula Cream">MH Mix Formula Cream</option>
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+                <a href="this is me"><button  type="submit">Submit Order</button></a>
+            </form>
+        </section>
+
+        <!-- Contact Owner Section -->
+        <section id="contact">
+            <h2>Contact Owner</h2>
+            <p>For orders, inquiries, or support, contact the owner directly. We are always happy to help you.</p>
+            <div class="contact-options">
+                <a href="tel:+923189626458">📞 Phone Call</a> <!-- Replace with actual phone number -->
+                <a href="https://wa.me/+923189626458?text=Hello%20MH%20Store%20Owner" target="_blank">💬 WhatsApp Chat</a> <!-- Replace with actual WhatsApp number -->
+                <a href="mailto:muhammadsaadgkan464gmail.com">📧 Contact Form (Email)</a> <!-- Replace with actual email -->
+            </div>
+            <form id="contact-form" style="margin-top: 20px;">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>MH Store</strong><br>Quality Products | Easy Online Orders | Trusted Service</p>
+        <p>&copy; 2026 MH Store. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Advanced JavaScript for form handling and interactivity
+        document.getElementById('order-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const product = document.getElementById('product').value;
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            
+            // Simulate order submission (in real app, send to server or WhatsApp)
+            const message = `New Order:\nProduct: ${product}\nName: ${name}\nPhone: ${phone}\nAddress: ${address}`;
+            const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`; // Replace with actual number
+            window.open(whatsappUrl, '_blank');
+            
+            alert('Order submitted! You will be redirected to WhatsApp for confirmation.');
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const message = document.getElementById('message').value;
+            
+            // Simulate email send (in real app, use backend)
+            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+        });
+    </script>
+</body>
+</html>
